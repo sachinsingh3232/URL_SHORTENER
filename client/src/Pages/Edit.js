@@ -7,6 +7,10 @@ const Edit = () => {
     const state = useLocation().state;
     const [url, setUrl] = useState(state?.redirectURL || "")
     const navigate = useNavigate();
+    useEffect(() => {
+        const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+        if (!userInfo) navigate('/login');
+    }, [navigate])
 
     const handleSubmit = async (e) => {
         e.preventDefault();
