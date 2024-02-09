@@ -26,7 +26,7 @@ const Dashboard = () => {
             <Navbar />
             <div className='cardContainer'>
                 {links.length > 0 && links.map((link, i) => (
-                    <Card key={i} link={link} />
+                    <div>hello</div>
                 ))}
             </div>
         </div>
