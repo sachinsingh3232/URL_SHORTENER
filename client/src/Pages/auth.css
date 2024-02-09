@@ -1,0 +1,34 @@
+.auth {
+    width: 400px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.url {
+    height: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+input{
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+    background: transparent;
+    border: none;
+    border: 1px solid grey;
+}
+.button{
+    padding: 10px;
+    background-color: skyblue;
+    width: 100px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}

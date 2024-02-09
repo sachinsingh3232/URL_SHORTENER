@@ -1,0 +1,54 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    /* width: 500px; */
+    background-color: #d5cece;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.link {
+    /* background-color: grey; */
+    margin-bottom: 6px;
+    align-self: flex-start;
+    /* border-radius: 10px; */
+    /* width: 100%; */
+}
+
+.actions {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visit {
+    display: none;
+}
+
+.info{
+    width:50px;
+}
+.info:hover {
+    .icon {
+        display: none;
+    }
+
+    .visit {
+        display: block;
+        color:black;
+        font-size: 15px;
+    }
+}
+
+button {
+    width: 50px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

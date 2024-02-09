@@ -1,0 +1,14 @@
+.Dashboard {
+    background-color: rgb(55, 53, 53);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cardContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
