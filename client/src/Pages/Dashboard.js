@@ -25,7 +25,7 @@ const Dashboard = () => {
         <div className='Dashboard'>
             <Navbar />
             <div className='cardContainer'>
-                {links.length > 0 && links.map((link) => (
+                {links?.length > 0 && links.map((link) => (
                     <Card key={link.shortId} link={link} />
                 ))}
             </div>
