@@ -24,6 +24,11 @@ const Dashboard = () => {
     return (
         <div className='Dashboard'>
             <Navbar />
+        <div className='cardContainer'>
+                {links.length > 0 ? (links.map((link, i) => (
+                    <Card key={i} link={link} />
+                ))):<div></div>}
+            </div>
         </div>
     )
 }
