@@ -14,8 +14,8 @@ const Dashboard = () => {
                 )
                 // console.log(resp.data.data);
                 setLinks(resp?.data?.data);
-            } catch () {
-                // console.log(e)
+            } catch (err) {
+                console.log(err)
             }
         }
         fun();
