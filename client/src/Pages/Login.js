@@ -19,6 +19,7 @@ const Login = () => {
                 { headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*", }, withCredentials: true }
             )
             setError(false)
+            localStorage.setItem("userInfo", JSON.stringify(resp?.data?.other?._doc?._id));
             navigate('/')
         } catch (e) {
             setError(true)
