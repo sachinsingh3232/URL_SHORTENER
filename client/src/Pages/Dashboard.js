@@ -24,8 +24,10 @@ const Dashboard = () => {
     return (
         <div className='Dashboard'>
             <Navbar />
-        <div className='cardContainer'>
-                
+            <div className='cardContainer'>
+                {links.length > 0 && links.map((link) => (
+                    <Card key={link.shortId} link={link} />
+                ))}
             </div>
         </div>
     )
