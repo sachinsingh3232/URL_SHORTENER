@@ -24,11 +24,6 @@ const Dashboard = () => {
     return (
         <div className='Dashboard'>
             <Navbar />
-            <div className='cardContainer'>
-                {links.length > 0 && links.map((link, i) => (
-                    <div>hello</div>
-                ))}
-            </div>
         </div>
     )
 }
