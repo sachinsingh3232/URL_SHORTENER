@@ -11,6 +11,7 @@ const Navbar = () => {
       const resp = await axios.post(`${process.env.REACT_APP_API_URL}/user/logout`,{},
       { headers: { "Content-Type": "application/json" }, withCredentials: true }
       )
+      localStorage.removeItem("userInfo");
       navigate('/login')
     } catch (e) {
       alert("Please Login!")
